@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html, body{
+      background-color: rgb(211, 237, 255);
+      font-family: "Outfit", Verdana;
+    }
+
+    @font-face {
+      font-family: "Outfit";
+      src: url("fonts/OUTFIT-MEDIUM.TTF") format("truetype");
+    }
+
+    .container{/*最外层的容器，设置为flex且高度占据整个屏幕，里面的元素放在中心*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 200px;
+      height: 100vh;
+
+      margin: auto;
+    }
+
+    .card{/*卡片容器，包裹图片文字内容，为其设置背景颜色、阴影*/
+      width: 200px;
+      border-radius: 10px;
+
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+
+      padding: 8px;
+    }
+
+    .picture{/*二维码图片。设置宽高和圆角*/
+      width: 200px;
+      border-radius: 12px;
+    }
+
+    
+    h4{
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+
+      margin: 4px 0px;
+      text-align: center;
+    }
+    p{
+      color: rgb(190, 190, 190);
+      font-size: 12px;
+      font-weight: 500;
+
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img class="picture" src="images\image-qr-code.png">
+      <h4>
+        Improve your front-end skills by building projects
+      </h4>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Li JunXiang</a>.
+  </div>
+</body>
+</html>
